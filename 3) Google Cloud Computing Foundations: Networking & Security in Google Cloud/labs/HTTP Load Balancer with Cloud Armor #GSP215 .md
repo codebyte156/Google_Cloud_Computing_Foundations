@@ -12,6 +12,7 @@ export REGION2=
 ```cmd
 export VM_ZONE=
 ```
+#### After this there's a one more command in end
 ```cmd
 gcloud compute --project=$DEVSHELL_PROJECT_ID firewall-rules create default-allow-http \
 --direction=INGRESS \
