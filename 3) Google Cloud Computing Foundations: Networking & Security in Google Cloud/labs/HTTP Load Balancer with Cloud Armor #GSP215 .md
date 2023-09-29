@@ -155,7 +155,8 @@ curl -X POST -H "Content-Type: application/json" \
 -H "Authorization: Bearer $TOKEN" \
 -d @1.json \
 "https://compute.googleapis.com/compute/v1/projects/$DEVSHELL_PROJECT_ID/global/backendServices"
-sleep 60
+```
+```cmd
 gcloud compute url-maps create http-lb \
 --default-service=projects/$DEVSHELL_PROJECT_ID/global/backendServices/http-backend
 gcloud compute target-http-proxies create http-lb-target-proxy \
